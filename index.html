@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cc52b8618.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css"
+    
+    <title></title>
+</head>
+<body>
+      <section class="container">
+           <div class="cont">
+
+                    <section class="main">   
+                        <h2>Password Generator</h2>
+                        <div class="resultContainer">
+                        <span id="result"></span>
+                        <button class="btn" id="clipboard">
+                            <i class="fa-regular fa-clipboard"></i>
+                        </button>
+                        </div>
+                    </section>
+
+                <section class="settings">
+                    <div class="settingsP">
+                        <label for="length">Password Length</label>
+                        <input type="number" id="length" min="5"  max="25" value="25"/>
+                    </div>
+
+                    <div class="settingsP">
+                        <label for="upperCaseLetters">Includes uppercase letters</label>
+                        <input type="checkbox" id="upper"  />
+                </div>
+
+                <div class="settingsP">
+                        <label for="lowerCaseLetters">Includes lowecase letters</label>
+                        <input type="checkbox" id="lower" />
+                    </div>
+
+                    <div class="settingsP">
+                            <label for="numbers">Includes numbers</label>
+                            <input type="checkbox" id="numbers" />
+                    </div>
+
+                    <div class="settingsP">
+                        <label for="symbols">Includes symbols</label>
+                        <input type="checkbox" id="symbols" />
+                    </div>
+
+
+
+                </section>
+
+                 <button  id="gen">Generate Password</button>
+           </div>
+                    
+           
+      </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
